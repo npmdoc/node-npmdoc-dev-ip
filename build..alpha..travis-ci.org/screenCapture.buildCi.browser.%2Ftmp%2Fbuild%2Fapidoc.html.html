@@ -1,0 +1,163 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/shakyshane/dev-ip">dev-ip (v1.0.1)</a>
+</h1>
+<h4>Find a suitable IP host to view local websites on.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dev-ip">module dev-ip</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dev-ip.dev-ip">
+            function <span class="apidocSignatureSpan"></span>dev-ip
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dev-ip.toString">
+            function <span class="apidocSignatureSpan">dev-ip.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dev-ip.toString">module dev-ip.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dev-ip.toString.toString">
+            function <span class="apidocSignatureSpan">dev-ip.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dev-ip" id="apidoc.module.dev-ip">module dev-ip</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dev-ip.dev-ip" id="apidoc.element.dev-ip.dev-ip">
+        function <span class="apidocSignatureSpan"></span>dev-ip
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getIp() {
+
+    var networkInterfaces = require("os").networkInterfaces();
+    var matches = [];
+
+    Object.keys(networkInterfaces).forEach(function (item) {
+        networkInterfaces[item].forEach(function (address) {
+            if (address.internal === false &amp;&amp; address.family === "IPv4") {
+                matches.push(address.address);
+            }
+        });
+    });
+
+    return matches;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dev-ip.toString" id="apidoc.element.dev-ip.toString">
+        function <span class="apidocSignatureSpan">dev-ip.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dev-ip.toString" id="apidoc.module.dev-ip.toString">module dev-ip.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dev-ip.toString.toString" id="apidoc.element.dev-ip.toString.toString">
+        function <span class="apidocSignatureSpan">dev-ip.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
