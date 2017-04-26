@@ -1,6 +1,6 @@
 # npmdoc-dev-ip
 
-#### api documentation for  [dev-ip (v1.0.1)](https://github.com/shakyshane/dev-ip)  [![npm package](https://img.shields.io/npm/v/npmdoc-dev-ip.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-dev-ip) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-dev-ip.svg)](https://travis-ci.org/npmdoc/node-npmdoc-dev-ip)
+#### basic api documentation for  [dev-ip (v1.0.1)](https://github.com/shakyshane/dev-ip)  [![npm package](https://img.shields.io/npm/v/npmdoc-dev-ip.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-dev-ip) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-dev-ip.svg)](https://travis-ci.org/npmdoc/node-npmdoc-dev-ip)
 
 #### Find a suitable IP host to view local websites on.
 
